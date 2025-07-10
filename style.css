@@ -1,0 +1,97 @@
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family:  Roboto, sans-serif;
+}
+
+.header-bg, .hero-bg{
+    background-color: #1F2936;
+    color: #F9FAF8;
+    
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    flex: 1;
+    
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1024px;
+    flex: 1;
+    gap: 64px;
+    padding: 128px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0px;
+}
+
+.hero-right {
+    display: flex;
+    flex: 1;
+    background-color: grey;
+    justify-content: center;
+}
+
+.hero-right p {
+    align-self: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    width: 120px;
+}

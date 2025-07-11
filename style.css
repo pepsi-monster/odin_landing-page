@@ -1,97 +1,208 @@
-body {
-    box-sizing: border-box;
-    padding: 0px;
+body{
     margin: 0px;
-    font-family:  Roboto, sans-serif;
-}
-
-.header-bg, .hero-bg{
-    background-color: #1F2936;
-    color: #F9FAF8;
-    
+    font-family: Roboto, sans-serif;
 }
 
 .logo {
-    font-size: 24px;
     color: #F9FAF8;
+    font-size: 24px;
+}
+
+h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+h2 {
+    color: #1F2937;
+    font-size: 36px;
+    margin: 0px;
+
+}
+
+h3 {
+    color: #F9FAF8;
+    font-size: 24px;
+    margin: 0px;
+
+}
+
+p {
+    margin: 0px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+q {
+    font-size: 36px;
+    color: #1F2937;
+    quotes: none;
+    font-weight: 100;
+}
+
+blockquote{
+    padding: 0px;
+    margin: 0px;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 150%;
+}
+
+.header-bg, .hero-bg, .footer-bg {
+    display: flex;
+    background-color: #1F2937;
+    justify-content: center;
+    padding: 112px 0px;
+}
+
+.header-bg, .footer-bg {
+    padding: 0px;
+    height: 80px;
+}
+
+.info-bg, .cta-bg {
+    display: flex;
+    background-color: #F9FAF8;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 112px 0px;
+}
+
+.quote-bg {
+    box-sizing: border-box;
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    padding: 112px 0px;
 }
 
 .header {
     display: flex;
-    justify-content: center;
-}
-
-.header-container {
-    display: flex;
+    width: 1024px;
     justify-content: space-between;
     align-items: center;
-    max-width: 1024px;
-    flex: 1;
-    
 }
 
 .header ul{
     display: flex;
     list-style: none;
     gap: 16px;
+    margin-left: 0px;
+    padding: 0px;
 }
 
 .header a {
     text-decoration: none;
-    color: #F9FAF8;
+    color: #F9FAF8
 }
 
 .hero {
     display: flex;
-    justify-content: center;
+    width: 1024px;
+    justify-content: space-between;
+    gap: 64px;
 }
 
-.hero-container {
+.hero-left, .hero-right {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1024px;
     flex: 1;
-    gap: 64px;
-    padding: 128px;
 }
 
 .hero-left {
-    display: flex;
     flex-direction: column;
-    flex: 1;
-    margin: 0px;
+    gap: 12px;
 }
 
 .hero-right {
-    display: flex;
-    flex: 1;
     background-color: grey;
     justify-content: center;
+    align-items: center;
 }
 
-.hero-right p {
-    align-self: center;
-}
-
-h1 {
-    font-size: 48px;
-    margin: 0px;
+.btn-primary {
+    border-radius: 8px;
+    background-color: #3882F6;
     color: #F9FAF8;
-    font-weight: 900;
+    border-style: none;
+    padding: 8px 16px;
+    font-size: 20px;
+    width: 156px;
 }
-
-p {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-button {
+.btn-inverted {
+    border-radius: 16px;
+    border: 2px solid  #F9FAF8;
     background-color: #3882F6;
     color: #F9FAF8;
     padding: 8px 16px;
+    font-size: 20px;
+    width: 156px;
+}
+
+.info {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.info .info-cards {
+    display: flex; 
+    gap: 40px;
+    flex: none;
+}
+
+.info .info-box {
+    border: #3882F6 solid 4px;
+    width: 168px;
+    height: 168px;
+    border-radius: 16px;
+}
+
+.info .info-card {
+    width: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.info-card p{ 
+    color: #1F2937;
+}
+
+.quote {
+    box-sizing: border-box;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px 120px;
+}
+
+.quote p {
+    color: #1F2937;
+    font-weight: bold;
+    text-align: right;;
+}
+
+.cta {
+    box-sizing: border-box;
     border-radius: 8px;
-    font-size: 16px;
-    border: none;
-    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 56px;
+    width: 1024px;
+    background-color: #3882F6;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8
 }
